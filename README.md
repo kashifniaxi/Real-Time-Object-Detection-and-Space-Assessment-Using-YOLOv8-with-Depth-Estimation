@@ -1,0 +1,2 @@
+# Real-Time-Object-Detection-and-Space-Assessment-Using-YOLOv8-with-Depth-Estimation
+This project uses YOLOv8 for real-time object detection and space assessment, integrating stereo depth mapping for precise area estimation. Optimized for Jetson Nano with TensorRT, it ensures efficient edge computing. Key technologies include OpenCV, PyTorch, and Streamlit, with future plans for LiDAR integration and advanced analytics.
