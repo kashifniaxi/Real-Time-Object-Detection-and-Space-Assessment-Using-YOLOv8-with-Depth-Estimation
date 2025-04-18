@@ -1,0 +1,60 @@
+###########################################
+
+SOFTWARE: VSCode
+Python Version: 3.11.8
+
+###########################################
+
+First, install these libraries using command: pip install <library name>
+
+streamlit
+opencv-python
+numpy
+torch
+ultralytics
+matplotlib
+pillow
+
+###########################################
+
+RUN COMMANDS: 
+streamlit run app.py
+python yolo_obj_detection.py (make sure the file name is correct)
+
+###########################################
+
+DATASET SOURCE: 
+OPTION 1: Visit the official COCO dataset website: https://cocodataset.org/#download (2017 Dataset (recommended))
+
+OPTION 2: Using some coding
+###########################################
+CODE:
+import torchvision.datasets as datasets
+
+# Download COCO train dataset (will download automatically)
+coco_train = datasets.CocoDetection(
+    root="./train2017",
+    annFile="./annotations/instances_train2017.json",
+    download=True  # Set to True to download
+)
+
+# Download COCO validation dataset
+coco_val = datasets.CocoDetection(
+    root="./val2017",
+    annFile="./annotations/instances_val2017.json",
+    download=True
+)
+
+##############################################
+Every yolo model is trained on this standard COCO dataset, so no need to train the model. If you want to train on custom dataset, i can guide you or train for you, once you provide the dataset.
+##############################################
+
+For additional help, please refer to:
+
+The project's GitHub repository
+Streamlit documentation
+YOLOv8 documentation
+OpenCV documentation
+Or reach me out!
+
+Happy Learning!!!
